@@ -22,6 +22,6 @@ frontend UI's as well as connecting it to a backend that the team can use. The e
 I had no experience in Web/Mobile development so there was steep learning curve I had to overcome. For the first month, I spent most of my days teaching myself how to use React Native and Firebase by looking through the documentations to understand how to integrate it as a BaaS(Backend as a Service). Then, I inplmented over 10 screens involving the app that was consistent with the style and UI that the executives wanted. While implementing these screens, I incorporated the logic for connecting the screen UI's and different functionalities executives specified in meetings. I used Firebase Auth to authenticate the users on the app and was able to store I was able to store data for users and product information using Firestore and images on Firebase Real Time Database.
 
 ## Takeways
-After taking Principles of Software Engineering here at Vanderbilt, I learned different 
+After taking Principles of Software Engineering here at Vanderbilt, I learned different Agile methodologies to ensure that the project gets finishe on time.
 
 
