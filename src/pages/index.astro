@@ -7,7 +7,7 @@ import PortfolioPreview from '../components/PortfolioPreview.astro';
 
 // Data Fetching: List all Markdown posts in the repo.
 const projects = await Astro.glob('./projects/**/*.md');
-const featuredProject = projects[0];
+const featuredProject = projects[2];
 const experineces = await Astro.glob('./experiences/**/*.md');
 const featuredExperience = experineces[0];
 
@@ -221,8 +221,8 @@ const featuredExperience = experineces[0];
 				</h1>
 				<div class="roles">
 					<span class="role">👩‍💻 Developer <span class="invert">👩‍💻 Developer</span></span>
-					<span class="role">🎤 Speaker <span class="invert">🎤 Speaker</span></span>
-					<span class="role">✏️ Writer <span class="invert">✏️ Writer</span></span>
+					<span class="role">🎤 Musician <span class="invert">🎤 Musician</span></span>
+					<span class="role">🏀 Athlete <span class="invert">🏐 Athlete</span></span>
 				</div>
 				<p class="desc">Lover of dogs, music, and sports.</p>
 			</div>
