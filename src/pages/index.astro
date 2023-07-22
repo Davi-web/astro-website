@@ -7,7 +7,7 @@ import PortfolioPreview from '../components/PortfolioPreview.astro';
 
 // Data Fetching: List all Markdown posts in the repo.
 const projects = await Astro.glob('./projects/**/*.md');
-const featuredProject = projects[2];
+const featuredProject = projects[0];
 const experineces = await Astro.glob('./experiences/**/*.md');
 const featuredExperience = experineces[0];
 
