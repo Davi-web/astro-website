@@ -30,4 +30,4 @@ I took Artifical Intelligence course my senior year at Vanderbilt, but never rea
 ## Takeaways
 I feel like I learned alot more about React server componenets and how it works with the new Next13 app router. I also learned how to use Stripe's checkout session and how to use webhooks to listen for events from Stripe. I also learned how to use AI in my projects and how to prompt engineer to give better outputs. I also learned how to use shadcn/ui, which is a frontend component library built on top of Radix/UI and Tailwind CSS. I felt that there was alot more room for customizing the components that you download from shadcn/ui as you can edit it to fit the design for your website.
 
-Check out the website [Genius](https://ai-sass.vercel.app) and the github
+Check out the website [Genius](https://ai-sass.vercel.app) and the [github](https://github.com/Davi-web/ai-sass)
