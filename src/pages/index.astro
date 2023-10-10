@@ -4,6 +4,7 @@ import MainHead from '../components/MainHead.astro';
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
 import PortfolioPreview from '../components/PortfolioPreview.astro';
+import { ViewTransitions } from 'astro:transitions';
 
 // Data Fetching: List all Markdown posts in the repo.
 const projects = await Astro.glob('./projects/**/*.md');
@@ -200,6 +201,7 @@ const featuredExperience = experineces[0];
 				margin-top: 2em;
 			}
 		</style>
+		<ViewTransitions/>
 	</head>
 	<body>
 		<Nav />
@@ -224,7 +226,7 @@ const featuredExperience = experineces[0];
 					<span class="role">🎤 Musician <span class="invert">🎤 Musician</span></span>
 					<span class="role">🏀 Athlete <span class="invert">🏐 Athlete</span></span>
 				</div>
-				<p class="desc">Lover of dogs, music, and sports.</p>
+				<p class="desc">Lover of gaming, music, and sports.</p>
 			</div>
 		</header>
 		<main class="wrapper">

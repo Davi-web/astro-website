@@ -3,7 +3,7 @@ layout: ../../layouts/project.astro
 title: Visualizo
 client: Self
 publishDate: 2023-10-07 00:00:00
-img: /assets/pickup3.png
+img: /assets/visualizo.png
 description: |
  Path Finding Visualier
 tags:
@@ -12,6 +12,10 @@ tags:
   - Tailwind CSS
   - ShadCn/UI
   - Python
+  - Pydantic
+  - Swagger UI
+  - Pytest
+  - Cypress
   - FastAPI
   - CI/CD
 ---
@@ -38,16 +42,13 @@ The visualizer offers versatile options, allowing you to customize the grid size
 - Users can change the size of the grid to make the grid bigger or smaller.
 
 ## Takeaways:
-From this project, I was able to learn how to use FastAPI, which is a backend technology to write server code in Python. I was comfortable with using Python from using it to practice for interviews, and I believed that this project would be a good way for me to showcase my versatility in other languages. It was suprisingly easy to use FastAPI; although I ran into a few hiccups mananging two package managers(pnpm and python virtual env) as well as making sure the FastAPI would be able to connect to the NextJs project. This project helped me become more comfortable using python tools and libraries. I was also able to add basic unit testing for the frontend and backend code to ensure that my code was working as intended everytime someone pulls or pushes from the repository. I was also able to learn how to use Github Actions to automate the testing and deployment process. I was able to set up a CI/CD pipeline that would run the unit tests everytime someone pushes to the repository. If the tests pass, then the code will be deployed to the production server. If the tests fail, then the code will not be deployed to the production server. Instead it will point to the last successful build(serverless function) on Vercel. I tested the backend algorithms using PyTest and tested that the frontend pages would load in correctly using end to end testing with Cypress.  This project was a great way for me to learn how to use CI/CD with Github Actions and Vercel.
+From this project, I was able to learn how to use FastAPI, which is a backend technology to write server code in Python. I was comfortable with using Python from using it to practice for interviews, and I believed that this project would be a good way for me to showcase my versatility in other languages. It was suprisingly easy to use FastAPI; although I ran into a few hiccups mananging two package managers(pnpm and python virtual env) as well as making sure the FastAPI would be able to connect to the NextJs project. This project helped me become more comfortable using python tools and libraries. I was also able to add basic unit testing for the frontend and backend code to ensure that my code was working as intended everytime someone pulls or pushes from the repository. I was also able to learn how to use Github Actions to automate the testing and deployment process. I was able to set up a CI/CD pipeline that would run the unit tests everytime someone pushes to the repository.
 
-## Frameworks Used:
+- If the tests pass, then the code will be deployed to the production server. 
+- If the tests fail, then the code will not be deployed to the production server. 
+- Instead it will point to the last successful build(serverless function) on Vercel.
 
-- Next.js as our fullstack framework with React to build our frontend components.
-- Tailwind CSS to style our frontend components.
-- ShadCn/UI for our frontend component library.
-- FastAPI for our backend to develop the algorithm that will be used to find a path from the start node to the end node.
-- Pydantic to validate the data that is sent to the backend.
-- Swagger UI to document our API.
-- Github Actions & Yaml to automate the testing and deployment process.
-- Pytest to test our backend algorithms.
-- Cypress to test our frontend pages.
+I tested the backend algorithms using PyTest and tested that the frontend pages would load in correctly using end to end testing with Cypress. The frontend test will run on node 16.x and 18.x to ensure that it works on both versions. After the tests, I setup another workflow to format the code using prettier. This was not necessary but could be for larger teams where there are constant pushes and pull requests. To create these workflows, I had to work with Yaml files and creating a pipeline using bash scripting. This project was a great way for me to learn how to use CI/CD with Github Actions for my specifc use cases!
+
+![workflow image](/assets/visualizo-workflow.png)
+
