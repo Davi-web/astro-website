@@ -6,56 +6,61 @@ import { ViewTransitions } from 'astro:transitions';
 ---
 
 <html lang="en">
-	<head>
-		<ViewTransitions/>
-		<MainHead title="About | David Ha" description="About David" />
-		<style>
-			.heroImg {
-				max-height: 24rem;
-				object-fit: cover;
-				overflow: hidden;
-			}
+  <head>
+    <ViewTransitions />
+    <MainHead title="About | David Ha" description="About David" />
+    <style>
+      .heroImg {
+        max-height: 24rem;
+        object-fit: cover;
+        overflow: hidden;
+      }
 
-			.heroImg img {
-				width: 100%;
-			}
+      .heroImg img {
+        width: 100%;
+      }
 
-			.bio {
-				font-size: var(--f-u1);
-				line-height: 2;
-				margin-top: 4em;
-			}
+      .bio {
+        font-size: var(--f-u1);
+        line-height: 2;
+        margin-top: 4em;
+      }
 
-			.wrapper.bio {
-				max-width: 50em;
-			}
-			.text {
-				
-			}
-		</style>
-	</head>
-	<body>
-		<Nav />
-		<div class="wrapper">
-			<h1>About Me</h1>
-			<div class="heroImg">
-				<img
-					width="1400"
-					height="350"
-					src="https://source.unsplash.com/8mp8WSnkWb8/1400x350"
-				/>
-			</div>
-			<div class="bio wrapper">
-				<p class="">
-					Hello! My name is David Jeseung Ha and I am a rising Senior at Vanderbilt University majoring in Computer Science & Applied Mathematics. I am interested in full stack web development, data science, and machine learning. I am also interested in the intersection of technology and business.
+      .wrapper.bio {
+        max-width: 50em;
+      }
+      .text {
+      }
+    </style>
+  </head>
+  <body>
+    <Nav />
+    <div class="wrapper">
+      <h1>About Me</h1>
+      <div class="heroImg">
+        <img
+          width="1400"
+          height="350"
+          src="https://source.unsplash.com/8mp8WSnkWb8/1400x350"
+        />
+      </div>
+      <div class="bio wrapper">
+        <p class="bio">
+          Hello! My name is David Jeseung Ha and I am a rising Senior at
+          Vanderbilt University majoring in Computer Science & Applied
+          Mathematics. I am interested in full stack web development, data
+          science, and machine learning. I am also interested in the
+          intersection of technology and business.
+        </p>
 
-				</p>
-				
-				<p>					
-					I have experience with web development, and am comfortable working with most web frameworks. Currently, I am looking for a full time role as a Software Engineer. Feel free to reach out to me in my email or LinkedIn for any job opportunities!
-				</p>
-			</div>
-		</div>
-		<Footer />
-	</body>
+        <p class="bio">
+          I have experience with web development, and am comfortable working
+          with most web frameworks. Currently, I am looking for a full time role
+          as a Software Engineer. Feel free to reach out to me in my email or
+          LinkedIn for any job opportunities!
+        </p>
+      </div>
+    </div>
+    <Footer />
+  </body>
 </html>

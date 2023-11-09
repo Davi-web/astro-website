@@ -51,4 +51,5 @@ From this project, I was able to learn how to use FastAPI, which is a backend te
 I tested the backend algorithms using PyTest and tested that the frontend pages would load in correctly using end to end testing with Cypress. The frontend test will run on node 16.x and 18.x to ensure that it works on both versions. After the tests, I setup another workflow to format the code using prettier. This was not necessary but could be for larger teams where there are constant pushes and pull requests. To create these workflows, I had to work with Yaml files and creating a pipeline using bash scripting. This project was a great way for me to learn how to use CI/CD with Github Actions for my specifc use cases!
 
 ![workflow image](/assets/visualizo-workflow.png)
+Check out the website [Visualizo](https://pathfinding-visualizer-janq.vercel.app/) and the [github](https://github.com/Davi-web/pathfinding-visualizer)
 
